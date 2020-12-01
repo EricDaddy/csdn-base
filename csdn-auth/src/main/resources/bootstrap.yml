@@ -1,0 +1,21 @@
+server:
+  port: 8071
+  servlet:
+    context-path: /auth
+
+spring:
+  application:
+    name: csdn-auth
+
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  profiles:
+    active: dev
+
+

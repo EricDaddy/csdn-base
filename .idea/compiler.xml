@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="csdn-gateway" />
+        <module name="csdn-starter-mybatis" />
+        <module name="csdn-user-api" />
+        <module name="csdn-auth" />
+        <module name="csdn-core-framework-web" />
+        <module name="csdn-starter-cache" />
+        <module name="csdn-system-service" />
+        <module name="csdn-system-api" />
+        <module name="csdn-core-framework" />
+        <module name="csdn-common" />
+        <module name="csdn-user-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="csdn-auth" options="-parameters" />
+      <module name="csdn-common" options="-parameters" />
+      <module name="csdn-core" options="-parameters" />
+      <module name="csdn-core-framework" options="-parameters" />
+      <module name="csdn-core-framework-web" options="-parameters" />
+      <module name="csdn-gateway" options="-parameters" />
+      <module name="csdn-starter-cache" options="-parameters" />
+      <module name="csdn-starter-mybatis" options="-parameters" />
+      <module name="csdn-system-api" options="-parameters" />
+      <module name="csdn-system-service" options="-parameters" />
+      <module name="csdn-user-api" options="-parameters" />
+      <module name="csdn-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
