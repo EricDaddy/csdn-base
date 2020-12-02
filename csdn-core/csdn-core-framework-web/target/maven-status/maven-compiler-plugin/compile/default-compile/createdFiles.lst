@@ -1,5 +1,0 @@
-com\xkk\csdn\core\handler\GlobalExceptionHandler.class
-com\xkk\csdn\core\result\enums\SystemCodeEnum.class
-com\xkk\csdn\core\result\BaseResponse.class
-com\xkk\csdn\core\exception\ApiException.class
-com\xkk\csdn\core\config\Swagger2Config.class
