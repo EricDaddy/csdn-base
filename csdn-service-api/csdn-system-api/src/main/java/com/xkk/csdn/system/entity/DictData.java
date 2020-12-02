@@ -1,10 +1,8 @@
 package com.xkk.csdn.system.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
-import java.io.Serializable;
+
+import com.xkk.csdn.core.dataobject.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -19,15 +17,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("csdn_sys_dict_data")
-public class DictData implements Serializable {
+public class DictData extends BaseEntity<DictData> {
 
-    private static final long serialVersionUID=1L;
-
-    /**
-     * 主键
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
 
     /**
      * 字典类型ID
@@ -63,31 +54,6 @@ public class DictData implements Serializable {
      * 备注
      */
     private String remark;
-
-    /**
-     * 状态
-     */
-    private String status;
-
-    /**
-     * 创建人UID
-     */
-    private String createBy;
-
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createTime;
-
-    /**
-     * 最后更新人UID
-     */
-    private String updateBy;
-
-    /**
-     * 更新时间
-     */
-    private LocalDateTime updateTime;
 
     /**
      * 是否发布(1:是，0:否)

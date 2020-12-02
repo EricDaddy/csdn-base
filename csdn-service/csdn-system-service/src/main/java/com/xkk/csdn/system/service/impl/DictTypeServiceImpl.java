@@ -1,5 +1,10 @@
 package com.xkk.csdn.system.service.impl;
 
+import cn.hutool.core.util.ObjectUtil;
+import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.xkk.csdn.core.exception.ApiException;
 import com.xkk.csdn.system.entity.DictType;
 import com.xkk.csdn.system.mapper.DictTypeMapper;
 import com.xkk.csdn.system.service.IDictTypeService;
@@ -17,4 +22,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class DictTypeServiceImpl extends ServiceImpl<DictTypeMapper, DictType> implements IDictTypeService {
 
+    @Override
+    public boolean submit(DictType dictType) {
+        LambdaQueryWrapper<DictType> lqw = Wrappers.<DictType>query().lambda().eq(DictType::getDictType, dictType.getDictType()).eq(DictType::getDictName, dictType.getDictName());
+        Integer cnt = baseMapper.selectCount((ObjectUtil.isEmpty(dictType.getId())) ? lqw : lqw.notIn(DictType::getId,dictType.getId()));
+        if (cnt > 0) {
+            throw new ApiException("当前字典键值已存在!");
+        }
+        if (ObjectUtil.isEmpty(dictType.getParentId())) {
+            dictType.setParentId(0L);
+        }
+        return saveOrUpdate(dictType);
+    }
 }

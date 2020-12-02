@@ -29,8 +29,8 @@
         <!-- Web 相关 -->
         <servlet.version>2.5</servlet.version>
         <knife4j.version>2.0.2</knife4j.version>
-        <swagger.version>1.5.21</swagger.version>
-        <springfox-swagger.version>2.9.2</springfox-swagger.version>
+        <swagger.version>2.6.1</swagger.version>
+        <swagger.ui.version>2.6.1</swagger.ui.version>
         <!-- DB 相关 -->
         <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
         <druid.version>1.1.16</druid.version>
@@ -56,6 +56,9 @@
         <sentry.version>1.7.30</sentry.version>
         <!-- 工具类相关 -->
         <fastjson.version>1.2.56</fastjson.version>
+        <jackson.version>2.10.2</jackson.version>
+        <log4j.version>1.2.17</log4j.version>
+        <jackson.mapper.asl.version>1.9.13</jackson.mapper.asl.version>
         <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
         <hutool.version>5.2.5</hutool.version>
         <guava.version>27.0.1-jre</guava.version>
@@ -181,16 +184,42 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
+                        <dependency>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-annotations</artifactId>
+                            <version>${jackson.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-databind</artifactId>
+                            <version>${jackson.version}</version>
+                        </dependency>
+
+
+            <!-- swagger -->
             <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.ui.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- 日志 -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
             </dependency>
 
 

@@ -29,12 +29,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.xkk.csdn</groupId>
-            <artifactId>csdn-starter-mybatis</artifactId>
-        </dependency>
-    </dependencies>
 
 
 </project>

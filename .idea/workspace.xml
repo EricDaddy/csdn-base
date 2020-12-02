@@ -3319,11 +3319,16 @@
       <change afterPath="$PROJECT_DIR$/csdn-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-common/src/main/java/com/xkk/csdn/common/constants/SystemConstants.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-common/src/main/java/com/xkk/csdn/common/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/src/main/java/com/xkk/csdn/core/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/src/main/java/com/xkk/csdn/core/exception/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/src/main/java/com/xkk/csdn/core/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/src/main/java/com/xkk/csdn/core/result/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/src/main/java/com/xkk/csdn/core/result/enums/SystemCodeEnum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework/src/main/java/com/xkk/csdn/core/dataobject/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework/src/main/java/com/xkk/csdn/core/handler/MybatisFillHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework/src/main/resources/logback-spring.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-core/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-dependencies/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-gateway/pom.xml" afterDir="false" />
@@ -3331,19 +3336,29 @@
       <change afterPath="$PROJECT_DIR$/csdn-gateway/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service-api/csdn-user-api/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service-api/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/SystemApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/config/MybatisCodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/cmd/DictTypeRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/IDictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/IDictTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/impl/DictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/impl/DictTypeServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/resources/mapper/DictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/resources/mapper/DictTypeMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-user-service/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-user-service/src/main/java/com/xkk/csdn/user/UserApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/csdn-user-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/csdn-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-starter/csdn-starter-cache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-starter/csdn-starter-mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csdn-starter/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../csdn-blog/csdn-blog-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../csdn-blog/csdn-blog-service-api/blog-article-service-api/pom.xml" afterDir="false" />
@@ -6677,6 +6692,23 @@
       <change beforePath="$PROJECT_DIR$/../core/src/test/java/com/jeesite/test/MsgPushTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../core/src/test/resource/config/jeesite.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../core/src/test/resource/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-core/csdn-core-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-core/csdn-core-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictData.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictType.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service-api/csdn-system-api/src/main/java/com/xkk/csdn/system/entity/DictType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/SystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/SystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/controller/DictTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/mapper/DictTypeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/IDictTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/IDictTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/impl/DictTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/service/impl/DictTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-starter/csdn-starter-cache/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-starter/csdn-starter-mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn-starter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../document/dp-framwork-web-ext删除类.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../document/jeesite4代码生成工具的使用.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../document/代码生成功能.docx" beforeDir="false" />
@@ -6786,12 +6818,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="he" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
@@ -6814,19 +6852,20 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/csdn-service/csdn-system-service/src/main/java/com/xkk/csdn/system/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/csdn-core/csdn-core-framework/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\project\csdn-base\csdn-service\csdn-system-service\src\main\resources\mapper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\csdn-base\csdn-core\csdn-core-framework\src\main\resources" />
       <recent name="E:\project\csdn-base\csdn-service\csdn-system-service\src\main\java\com\xkk\csdn\system\config" />
       <recent name="E:\project\csdn-base\csdn-core\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\csdn-base\csdn-service\csdn-system-service\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -6902,17 +6941,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b19cd46e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4e7d6954" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b19cd46e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c625cd99" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4e7d6954" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@79493671" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b19cd46e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@84fba029" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4e7d6954" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3547102f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -6930,7 +6969,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606785892256</updated>
-      <workItem from="1606785899449" duration="22307000" />
+      <workItem from="1606785899449" duration="23466000" />
+      <workItem from="1606871248887" duration="19189000" />
     </task>
     <servers />
   </component>
@@ -6942,7 +6982,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

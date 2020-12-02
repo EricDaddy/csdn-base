@@ -22,7 +22,6 @@
         <module>csdn-service</module>
         <module>csdn-service-api</module>
         <module>csdn-dependencies</module>
-        <module>csdn-starter</module>
     </modules>
 
 

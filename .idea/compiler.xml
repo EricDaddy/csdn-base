@@ -7,18 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="csdn-gateway" />
-        <module name="csdn-starter-mybatis" />
         <module name="csdn-user-api" />
         <module name="csdn-auth" />
-        <module name="csdn-core-framework-web" />
-        <module name="csdn-starter-cache" />
         <module name="csdn-system-service" />
         <module name="csdn-system-api" />
-        <module name="csdn-core-framework" />
+        <module name="csdn-core-framework-web" />
         <module name="csdn-common" />
+        <module name="csdn-core-framework" />
         <module name="csdn-user-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="csdn-starter" target="1.8" />
+      <module name="csdn-starter-cache" target="1.8" />
+      <module name="csdn-starter-mybatis" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
