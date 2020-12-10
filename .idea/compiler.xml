@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,9 +10,11 @@
         <module name="csdn-gateway" />
         <module name="csdn-user-api" />
         <module name="csdn-auth" />
+        <module name="csdn-core-framework-web" />
+        <module name="csdn-core-redis" />
         <module name="csdn-system-service" />
         <module name="csdn-system-api" />
-        <module name="csdn-core-framework-web" />
+        <module name="csdn-core-mybatis" />
         <module name="csdn-common" />
         <module name="csdn-core-framework" />
         <module name="csdn-user-service" />
@@ -30,6 +33,8 @@
       <module name="csdn-core" options="-parameters" />
       <module name="csdn-core-framework" options="-parameters" />
       <module name="csdn-core-framework-web" options="-parameters" />
+      <module name="csdn-core-mybatis" options="-parameters" />
+      <module name="csdn-core-redis" options="-parameters" />
       <module name="csdn-gateway" options="-parameters" />
       <module name="csdn-starter-cache" options="-parameters" />
       <module name="csdn-starter-mybatis" options="-parameters" />

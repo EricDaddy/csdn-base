@@ -7,6 +7,13 @@ spring:
   application:
     name: csdn-gateway
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # 获取JWT验签公钥请求路径
+          jwk-set-uri: 'http://localhost:8071/auth/auth/publicKey'
+
 
   cloud:
     nacos:
@@ -15,7 +22,33 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yaml
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 启用服务发现
+          lower-case-service-id: true
+      routes:
+        - id: csdn-auth
+          uri: lb://csdn-auth
+          predicates:
+            - Path=/csdn-auth/**
+          filters:
+            - StripPrefix=1
+        - id: csdn-user-service
+          uri: lb://csdn-user-service
+          predicates:
+            - Path=/csdn-user-service/**
+          filters:
+            - StripPrefix=1
   profiles:
     active: dev
+
+
+# 配置白名单路径
+white-list:
+  urls:
+    - "/csdn-auth/oauth/token"
+    - "/csdn-user-service/**"
 
 

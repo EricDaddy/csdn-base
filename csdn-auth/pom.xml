@@ -30,6 +30,7 @@
         </dependencies>
     </dependencyManagement>
 
+
     <dependencies>
         <!-- spring cloud alibaba 服务 -->
         <dependency>
@@ -49,12 +50,13 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-jose</artifactId>
         </dependency>
 
         <dependency>
@@ -69,14 +71,28 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.xkk.csdn</groupId>
             <artifactId>csdn-core-framework-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.xkk.csdn</groupId>
+            <artifactId>csdn-core-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xkk.csdn</groupId>
+            <artifactId>csdn-core-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xkk.csdn</groupId>
             <artifactId>csdn-user-api</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
     </dependencies>

@@ -16,7 +16,6 @@
         <module>csdn-user-service</module>
     </modules>
 
-
     <dependencyManagement>
         <dependencies>
             <!-- onemall 基础 bom 文件  -->
@@ -30,6 +29,7 @@
 
         </dependencies>
     </dependencyManagement>
+
 
 
 </project>

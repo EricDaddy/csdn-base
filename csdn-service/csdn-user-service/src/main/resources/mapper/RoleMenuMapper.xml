@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xkk.csdn.user.mapper.RoleMenuMapper">
+
+    <select id="selectRolesByMenu" resultType="java.lang.String">
+        select role_code from csdn_sys_role_menu where mene_id = #{menuId,jdbcType=BIGINT}
+    </select>
+
+</mapper>

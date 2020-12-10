@@ -31,8 +31,7 @@
 
         <dependency>
             <groupId>com.xkk.csdn</groupId>
-            <artifactId>csdn-core-framework-web</artifactId>
-            <version>1.0.0</version>
+            <artifactId>csdn-core-redis</artifactId>
         </dependency>
 
         <dependency>
@@ -40,24 +39,6 @@
             <artifactId>csdn-user-api</artifactId>
             <version>1.0.0</version>
         </dependency>
-
-        <!-- DB 相关 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.xkk.csdn</groupId>
-            <artifactId>csdn-starter-mybatis</artifactId>
-        </dependency>
-
-
     </dependencies>
 
     <!--spring boot打包的话需要指定一个唯一的入门-->

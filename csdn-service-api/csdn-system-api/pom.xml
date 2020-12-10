@@ -13,17 +13,5 @@
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.xkk.csdn</groupId>
-            <artifactId>csdn-core-framework</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-    </dependencies>
-
 
 </project>

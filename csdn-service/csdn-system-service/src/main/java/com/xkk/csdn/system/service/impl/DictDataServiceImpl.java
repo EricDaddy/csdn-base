@@ -1,9 +1,9 @@
 package com.xkk.csdn.system.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xkk.csdn.system.entity.DictData;
 import com.xkk.csdn.system.mapper.DictDataMapper;
 import com.xkk.csdn.system.service.IDictDataService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

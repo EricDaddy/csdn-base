@@ -2,7 +2,7 @@ package com.xkk.csdn.system.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 
-import com.xkk.csdn.core.dataobject.BaseEntity;
+import com.xkk.csdn.core.web.dataobject.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

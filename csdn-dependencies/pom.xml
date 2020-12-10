@@ -22,21 +22,22 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <!-- 项目版本 -->
+        <csdn.version>1.0.0</csdn.version>
         <!-- 统一依赖管理 -->
-        <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
+        <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.SR1</spring.cloud.version>
         <spring.cloud.alibaba.version>2.2.1.RELEASE</spring.cloud.alibaba.version>
         <!-- Web 相关 -->
         <servlet.version>2.5</servlet.version>
-        <knife4j.version>2.0.2</knife4j.version>
-        <swagger.version>2.6.1</swagger.version>
-        <swagger.ui.version>2.6.1</swagger.ui.version>
+        <knife4j.version>2.0.4</knife4j.version>
+        <swagger-annotations.version>1.5.21</swagger-annotations.version>
         <!-- DB 相关 -->
-        <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.19</mysql-connector-java.version>
         <druid.version>1.1.16</druid.version>
         <mybatis-spring-boot-starter.version>2.0.0</mybatis-spring-boot-starter.version>
         <mybatis.version>3.5.4</mybatis.version>
-        <mybatis-plus.version>3.3.2</mybatis-plus.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
         <spring-boot-starter-data-jest.version>3.2.5.RELEASE</spring-boot-starter-data-jest.version>
         <!-- RPC 相关 -->
         <dubbo.version>2.7.7</dubbo.version>
@@ -95,13 +96,50 @@
             <dependency>
                 <groupId>com.xkk.csdn</groupId>
                 <artifactId>csdn-core-framework</artifactId>
-                <version>1.0.0</version>
+                <version>${csdn.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.xkk.csdn</groupId>
                 <artifactId>csdn-core-framework-web</artifactId>
-                <version>1.0.0</version>
+                <version>${csdn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xkk.csdn</groupId>
+                <artifactId>csdn-core-mybatis</artifactId>
+                <version>${csdn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xkk.csdn</groupId>
+                <artifactId>csdn-core-redis</artifactId>
+                <version>${csdn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xkk.csdn</groupId>
+                <artifactId>csdn-user-api</artifactId>
+                <version>${csdn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xkk.csdn</groupId>
+                <artifactId>csdn-system-api</artifactId>
+                <version>${csdn.version}</version>
+            </dependency>
+
+            <!-- swagger -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
             </dependency>
 
             <!-- DB 相关 -->
@@ -115,17 +153,6 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>${mybatis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-spring-boot-starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -153,24 +180,7 @@
                 <optional>true</optional>
             </dependency>
 
-            <dependency>
-                <groupId>com.xkk.csdn</groupId>
-                <artifactId>csdn-starter-cache</artifactId>
-                <version>1.0.0</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.xkk.csdn</groupId>
-                <artifactId>csdn-starter-mybatis</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${org.projectlombok.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -184,36 +194,17 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
-                        <dependency>
-                            <groupId>com.fasterxml.jackson.core</groupId>
-                            <artifactId>jackson-annotations</artifactId>
-                            <version>${jackson.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.fasterxml.jackson.core</groupId>
-                            <artifactId>jackson-databind</artifactId>
-                            <version>${jackson.version}</version>
-                        </dependency>
-
-
-            <!-- swagger -->
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger.ui.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${hutool.version}</version>
-            </dependency>
 
             <!-- 日志 -->
             <dependency>

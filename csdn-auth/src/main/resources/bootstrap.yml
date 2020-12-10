@@ -3,6 +3,10 @@ server:
   servlet:
     context-path: /auth
 
+feign:
+  okhttp:
+    enabled: true
+
 spring:
   application:
     name: csdn-auth

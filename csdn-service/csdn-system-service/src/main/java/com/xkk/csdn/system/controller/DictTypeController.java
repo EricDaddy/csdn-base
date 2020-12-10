@@ -1,18 +1,18 @@
 package com.xkk.csdn.system.controller;
 
 
-import com.xkk.csdn.core.result.BaseResponse;
+import com.xkk.csdn.core.web.result.BaseResponse;
 import com.xkk.csdn.system.controller.cmd.DictTypeRequestParams;
 import com.xkk.csdn.system.entity.DictType;
 import com.xkk.csdn.system.service.IDictTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 
 /**
  * <p>
@@ -36,7 +36,7 @@ public class DictTypeController {
      * @return
      */
     @PostMapping("addDictType")
-    public BaseResponse<Boolean> addDictType(@Valid @RequestBody DictTypeRequestParams dictTypeRequestParams) {
+    public BaseResponse<Boolean> addDictType(@Validated @RequestBody DictTypeRequestParams dictTypeRequestParams) {
         return BaseResponse.status(dictTypeService.submit(DictType.builder().dictType(dictTypeRequestParams.getDictType()).dictName(dictTypeRequestParams.getDictName()).build()));
     }
 
