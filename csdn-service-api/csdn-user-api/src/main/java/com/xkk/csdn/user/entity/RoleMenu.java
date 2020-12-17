@@ -27,6 +27,6 @@ public class RoleMenu extends BaseEntity<RoleMenu> {
     /**
      * 菜单id
      */
-    private Long MenuId;
+    private Long menuId;
 
 }

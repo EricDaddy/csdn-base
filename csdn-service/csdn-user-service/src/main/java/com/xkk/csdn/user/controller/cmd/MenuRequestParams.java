@@ -17,7 +17,7 @@ public class MenuRequestParams {
 
     private String menuCode;
 
-    private String parentId;
+    private Long parentId;
 
     private String type;
 

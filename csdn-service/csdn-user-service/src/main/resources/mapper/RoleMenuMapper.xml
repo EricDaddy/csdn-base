@@ -3,7 +3,7 @@
 <mapper namespace="com.xkk.csdn.user.mapper.RoleMenuMapper">
 
     <select id="selectRolesByMenu" resultType="java.lang.String">
-        select role_code from csdn_sys_role_menu where mene_id = #{menuId,jdbcType=BIGINT}
+        select role_code from csdn_sys_role_menu where menu_id = #{menuId,jdbcType=BIGINT}
     </select>
 
 </mapper>

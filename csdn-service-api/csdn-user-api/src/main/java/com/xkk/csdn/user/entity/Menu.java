@@ -16,8 +16,6 @@ import lombok.EqualsAndHashCode;
  * @since 2020-12-04
  */
 @Data
-@Builder
-@EqualsAndHashCode(callSuper = false)
 @TableName("csdn_sys_menu")
 public class Menu extends BaseEntity<Menu>{
 
@@ -34,7 +32,7 @@ public class Menu extends BaseEntity<Menu>{
     /**
      * 父级菜单编码
      */
-    private String parentId;
+    private Long parentId;
 
     /**
      * 所有父级菜单编码
